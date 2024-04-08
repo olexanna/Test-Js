@@ -1,0 +1,368 @@
+.list{
+
+	position: relative;
+	max-width: 700px;
+	width: 100%;
+	margin: 0 auto;
+	border-radius: 5px;
+	margin-top: 10px;
+	box-shadow: 0px 0px 8px 1px #0b0b0c;
+	display: flex;
+	background: #181921;
+	font-family: 'Roboto';
+
+	&-wrap{
+		position: relative;
+		flex-shrink: 0;
+		width: 230px;
+		overflow: auto;
+	}
+
+	&-inp{
+		position: sticky;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 1;
+
+		&-value{
+			position: relative;
+			width: 100%;
+			padding: 9px 0px 9px 10px;
+			outline: none;
+			font-size: 15px;
+			background: #181921;
+			border: 2px solid #29293b;
+			border-radius: 4px;
+			color: #b0b3c7;
+		}
+	}
+	&-body{
+		position: relative;
+		padding: 6px 5px 2px 7px;
+		max-height: 400px;
+		font-size: 15px;
+		min-height: 100%;
+		z-index: 0;
+	}
+	&-profile-wrap{
+		width: 100%;
+		position: relative;
+		overflow-y: auto;
+		font-size: 15px;
+		background: #15161e;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		padding: 0px 45px 48px 45px;
+	}
+
+	&-profile{
+		position: relative;
+
+		&-i{
+			position: relative;
+			display: flex;
+			padding: 23px 0px 52px 0px;
+			justify-content: space-between;
+
+			&-title{
+				position: relative;
+				color: white;
+				font-size: 30px;
+				font-family: "Poppins-Regular";
+				padding: 4px 0px 6px 0px;
+				display: flex;
+				align-items: center;
+				letter-spacing: 1.8px;
+			}
+
+			&-item{
+				position: relative;
+				width: 90px;
+				height: 82px;
+				background-image: url("/assets/images/profile.svg");
+				background-position: center;
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+		}
+
+		&-btn{
+			position: relative;
+			background: #212337;
+			text-align: center;
+			color: white;
+			font-size: 15px;
+			font-family: 'Poppins-Regular';
+			letter-spacing: 1px;
+			height: fit-content;
+			padding: 2px 13px 3px 13px;
+			border-radius: 2px;
+			cursor: pointer;
+		}
+
+		&-btn:hover{
+			transition: 0.5ms;
+			background: #2e3049;
+		}
+
+		&-item{
+			position: relative;
+			display: flex;
+			margin-bottom: 36px;
+
+			&-text{
+				position: relative;
+				color: #b3b7db;
+				font-size: 14px;
+				letter-spacing: 0.3px;
+				font-family: 'Poppins-Regular';
+				margin-right: 20px;
+			}
+			&-inp{
+				position: relative;
+				background: #15161e;
+				border: none;
+				border-bottom: 1px solid #22222f;
+				color: #ccd0f7;
+				width: 100%;
+				outline: unset;
+				font-size: 16px;
+				text-align: center;
+				letter-spacing: 1px;
+			}
+		}
+	}
+
+	&-block-wrap{
+		position: relative;
+		display: flex;
+		border-bottom: 1px solid #1e1f29;
+		align-items: end;
+		padding: 11px 6px 11px 6px;
+
+		&-i{
+			position: relative;
+			width: 19px;
+			height: 19px;
+			background-image: url("/assets/images/user-1.svg");
+			margin-right: 8px;
+		}
+	}
+
+	&-block-wrap:nth-last-child(1){
+		border-bottom: unset;
+	}
+
+	&-block{
+		position: relative;
+		display: flex;
+		color: #b0b3c7;
+		cursor: pointer;
+
+		&-item{
+			position: relative;
+			margin-right: 10px;
+		}
+
+		&-check{
+			position: relative;
+			width: 20px;
+			height: 20px;
+			border: 1px solid #d9d9ff;
+			margin-left: 10px;
+			cursor: pointer;
+			border-radius: 3px;
+			display: flex;
+			align-self: center;
+		}
+	}
+}
+.list-wrap::-webkit-scrollbar {
+	width: 5px;
+}
+.list-wrap::-webkit-scrollbar-track {
+	border-radius: 10px;
+}
+.list-wrap::-webkit-scrollbar-thumb {
+	background: #23222f;
+	border-radius: 10px;
+}
+.list-wrap::-webkit-scrollbar-thumb:hover {
+	background: #292835;
+}
+
+
+.list-tags{
+	position: relative;
+	overflow: hidden;
+
+	&-search{
+		position: relative;
+		outline: unset;
+		padding: 8px 0px 8px 6px;
+		border-top: 2px solid #f5f5ff;
+		border-bottom: 2px solid #f5f5ff;
+		border-left: unset;
+		border-right: unset;
+		width: 100%;
+		background: #ffffff;
+		color: #3e294b;
+	}
+}
+.list-tags-search-wrap{
+	position: relative;
+	display: flex;
+	border-radius: 8px;
+	border: 1px solid #ece4f1;
+}
+.list-tags-left{
+	position: relative;
+	width: 34px;
+	height: 35px;
+	background:#5d426f;
+	color: white;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	border: 2px solid #f5f5ff;
+}
+.list-tags-right{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 34px;
+	height: 35px;
+	background: #5d426f;
+	color: white;
+	cursor: pointer;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border: 2px solid #f5f5ff;
+}
+.list-tags-left:hover{
+	  background: #4f2f65;
+	  transition: 0.2s;
+  }
+.list-tags-right:hover{
+	background: #4f2f65;
+	transition: 0.2s;
+}
+.tags-block-wrap{
+	display: flex;
+	width: 100%;
+}
+.tags-block-display{
+	position: relative;
+	display: flex;
+	transition: 0.5s;
+	//padding: 0px 0px 0px 3px;
+}
+.tags-block-padding{
+	padding: 10px 0px 10px 3px!important;
+}
+.tags-block{
+	position: relative;
+	display: flex;
+	margin-right: 5px;
+	background: #47355f;
+	border-radius: 5px;
+	align-items: center;
+	padding: 5px 0px 6px 5px;
+	letter-spacing: 0.5px;
+	font-size: 12px;
+	color: white;
+	text-align: center;
+	flex-direction: row-reverse;
+
+	&-item{
+		position: relative;
+		font-family: 'Roboto';
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		max-width: 77px;
+		margin-right: 6px;
+	}
+	&-remove{
+		position: relative;
+		background: #4d345d;
+		color: #e9dfff;
+		font-family: 'Roboto';
+		width: 17px;
+		height: 17px;
+		font-size: 12px;
+		display: flex;
+		justify-content: center;
+		border-radius: 100%;
+		cursor: pointer;
+		margin-right: 4px;
+		border: 1px solid #543979;
+	}
+}
+
+.check:after{
+	content: "";
+	width: 17px;
+	height: 16px;
+	background: #505080;
+	border-radius: 2px;
+	border: 1px solid #505080;
+}
+ .check:before{
+	content: "";
+	position: absolute;
+	top: 3px;
+	left: 5px;
+	width: 6px;
+	height: 6px;
+	border-right: 2px solid white;
+	border-top: 2px solid white;
+	transform: rotate(135deg);
+	z-index: 1;
+}
+
+.profile{
+ 	position: relative;
+
+	&-i{
+		position: relative;
+	}
+
+	&-block{
+		position: relative;
+		display: none;
+	}
+
+	&-title{
+		position: relative;
+
+		&-id{
+			position: relative;
+		}
+		&-name{
+			position: relative;
+		}
+	}
+
+
+	&-dep{
+		position: relative;
+
+
+		&-item{
+			position: relative;
+		}
+	}
+}
+
+
+/*
+#4f478d;
+#e8e9fd;
+*/

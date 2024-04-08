@@ -1,0 +1,46 @@
+{
+  "name": "table",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "webpack-dev-server ",
+    "build": "webpack --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olexanna/Test-Js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olexanna/Test-Js.git"
+  },
+  "homepage": "https://github.com/olexanna/Test-Js.git",
+  "dependencies": {
+    "@babel/core": "^7.20.5",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "all-spanish-cities": "^1.0.1",
+    "antd": "^4.6.3",
+    "babel-loader": "^9.1.0",
+    "cities.json": "^1.1.20",
+    "copyfiles": "^2.4.1",
+    "country-cities": "^1.0.7",
+    "css-loader": "^6.7.2",
+    "html-webpack-plugin": "^5.5.0",
+    "lodash": "^4.17.20",
+    "node-sass": "^8.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router": "^6.14.2",
+    "react-router-dom": "^6.14.2",
+    "sass-loader": "^13.2.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.75.0",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.0.1"
+  }
+}
